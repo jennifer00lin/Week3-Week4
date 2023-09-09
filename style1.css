@@ -193,43 +193,78 @@ nav {
 }
 
 
-
-.main {
-  margin-top: 170px;
-  margin-left: 200px;
-  margin-right: 120px;
+.red {
+  color: #aa0601;
 }
 
-.main h2 {
-  font-size: 58px;
-  font-weight: bolder;
-  color: black;
-  border-left: 5px solid brown;
-  margin-bottom: 30px;
+
+
+.t-list {
+  width: 1296px;
+  margin: 0 auto;
 }
 
-.main h3 {
-  font-size: 24px;
-  font-weight: bolder;
-  color: black;
-  margin-bottom: 30px;
+.t-item {
+  width: 33.333%;
+  border: 1px solid #dcdcdc;
+  text-align: center;
 }
 
-.main span {
-  font-size: 20px;
-  font-weight: bolder;
-  color: black;
+.t-border {
+  border-bottom: 8px solid #AA0601;
 }
 
-.main p {
-  font-size: 15px;
-  color: black;
-  padding-top: 15px;
-  margin-bottom: 35px;
+.t-item a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.t-title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.t-subtitle {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+
+
+.banners .banner1,
+.banners .banner2 {
   width: 100%;
+  height: 296px;
 }
 
 
+.banner1 {
+  background-size: cover;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true);
+}
+
+.banner2 {
+  background-size: cover;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true);
+}
+
+.padding-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
+.padding-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
 .p-top-60 {
   padding-top: 60px;
@@ -239,47 +274,37 @@ nav {
   padding-bottom: 30px;
 }
 
-.p-bottom-60{
-  padding-bottom: 60px;
- }
+
+.m-top-30 {
+  margin-top: 30px;
+}
+
+.m-bottom-80 {
+  margin-bottom: 80px;
+}
 
 
 .m-right-8 {
   margin-right: 8px;
 }
 
-.m-right-50 {
-  margin-right: 50px;
-}
 
 .m-right-20 {
   margin-right: 20px;
 }
 
-
-.m-top-8 {
-  margin-top: 8px;
+.m-right-50 {
+  margin-right: 50px;
 }
-
-.m-top-15 {
-  padding-top: 15px;
-}
-
-.m-top-30 {
-  margin-top: 30px;
-}
-
-
-
-.padding-24 {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 
 .flex {
   display: flex;
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 
 .space-between {
   justify-content: space-between;
@@ -296,6 +321,80 @@ nav {
 .text-center {
   text-align: center;
 }
+
+
+
+
+
+.pic {
+  width: 24%;
+}
+
+.pic img {
+  width: 306px;
+}
+
+.text {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Roboto";
+}
+
+.text-400 {
+  font-weight: 400;
+}
+
+.text-500 {
+  font-weight: 500;
+}
+
+.box {
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.page-number li {
+  padding: 10px 15px;
+  border: 1px solid #555555;
+  color: #555555;
+  font-family: "Roboto";
+  line-height: 27px;
+  font-size: 18px;
+}
+
+
+
+.page-number a:hover {
+   font-style:oblique;
+}
+
+.page-active {
+  background-color: black;
+}
+
+.page-active a {
+  color: white;
+}
+
+
+.dark-b {
+  background-color: #5f3e2d;
+}
+
+.light-b {
+  background-color: #b75929;
+}
+
+
+
 
 
 .footer-nav a {
@@ -363,19 +462,37 @@ body{
    /* computer */
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 0 0 12px;
+    padding:0 12px;
 
     
     /* phone */
     @media (max-width:576px) {
         max-width: 372px;
-    
+        /* 348+24gutter */
     }
   }
 
+
 }
 
+ 
 
 
+.container{
+    /* computer */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding:0 12px;
 
+    /* tablet */
+    @media(max-width: 992px){
+        max-width: 720px;
+        /* 696+24gutter */
+    }
 
+    /* phone */
+    @media (max-width:576px) {
+        max-width: 372px;
+        /* 348+24gutter */
+    }
+}
