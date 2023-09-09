@@ -1,0 +1,381 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* -------- */
+
+
+.bc-AA0601 {
+  background-color: #AA0601;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 80px;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 64px;
+}
+
+.nav-link:last-child {
+  margin-right: 0px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.nav-link a:hover {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.nav-link a:active {
+  color: yellow;
+  border-bottom: 5px solid yellow;
+}
+
+.white {
+  color: white;
+}
+
+
+
+.main {
+  margin-top: 170px;
+  margin-left: 200px;
+  margin-right: 120px;
+}
+
+.main h2 {
+  font-size: 58px;
+  font-weight: bolder;
+  color: black;
+  border-left: 5px solid brown;
+  margin-bottom: 30px;
+}
+
+.main h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.main span {
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.main p {
+  font-size: 15px;
+  color: black;
+  padding-top: 15px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+
+
+.p-top-60 {
+  padding-top: 60px;
+}
+
+.p-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.p-bottom-60{
+  padding-bottom: 60px;
+ }
+
+
+.m-right-8 {
+  margin-right: 8px;
+}
+
+.m-right-50 {
+  margin-right: 50px;
+}
+
+.m-right-20 {
+  margin-right: 20px;
+}
+
+
+.m-top-8 {
+  margin-top: 8px;
+}
+
+.m-top-15 {
+  padding-top: 15px;
+}
+
+.m-top-30 {
+  margin-top: 30px;
+}
+
+
+
+.padding-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.footer-nav a {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+}
+
+.s-icon li img {
+  width: 50px;
+  height: 50px;
+}
+
+.s-icon-big li img {
+  width: 500px;
+  height: 500px;
+}
+
+
+.s-icon li {
+  margin-right: 32px;
+}
+
+.s-icon li:last-child {
+  margin-right: 0px;
+}
+
+footer .phone,
+footer .email {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 55px;
+  font-size: 35px;
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-size: 36px;
+  color: white;
+}
+
+.copywrite {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.terms {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.p-footer {
+  display: none;
+}
+
+body{
+/* tablet */
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }  
+  
+   /* computer */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0 0 12px;
+
+    
+    /* phone */
+    @media (max-width:576px) {
+        max-width: 372px;
+    
+    }
+  }
+
+}
+
+
+
+
+
