@@ -134,9 +134,22 @@ a {
 
 /* -------- */
 
+* {
+  box-sizing: border-box;
+}
 
-.bc-AA0601 {
-  background-color: #AA0601;
+.white {
+  color: white;
+}
+
+.red {
+  color: #aa0601;
+}
+
+
+
+.background {
+  background-color: #aa0601;
 }
 
 .container {
@@ -144,9 +157,81 @@ a {
   margin: 0 auto;
 }
 
-.logo {
-  width: 80px;
-  height: 100%;
+.p-top-60 {
+  padding-top: 60px;
+}
+
+.p-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.p-bottom-70{
+  padding-bottom: 70px;
+ }
+
+.padding-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
+
+.m-right-8 {
+  margin-right: 8px;
+}
+
+.m-right-20 {
+  margin-right: 20px;
+}
+
+
+
+.m-right-50 {
+  margin-right: 50px;
+}
+
+
+.m-top-8 {
+  margin-top: 8px;
+}
+
+.m-top-16 {
+  margin-top: 16px;
+}
+
+.m-top-30 {
+  margin-top: 30px;
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  }
+
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 nav {
@@ -156,37 +241,40 @@ nav {
   padding-bottom: 16px;
 }
 
+.logo {
+  width: 80px;
+  height: 100%;
+}
 
 .nav-list {
   display: flex;
   align-items: center;
 }
 
-.nav-link {
+.nav-item {
   margin-right: 64px;
 }
 
-.nav-link:last-child {
+.nav-item:last-child {
   margin-right: 0px;
 }
 
-.nav-link a {
+.nav-item a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 20px;
-  line-height: 30px;
   font-weight: 400;
+  line-height: 30px;
+  
 }
 
-.nav-link a:hover {
+.nav-item a:hover {
   color: white;
   border-bottom: 5px solid white;
 }
 
-.nav-link a:active {
-  color: yellow;
-  border-bottom: 5px solid yellow;
-}
+
+
 
 .white {
   color: white;
@@ -397,6 +485,8 @@ nav {
 
 
 
+
+
 .footer-nav a {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 24px;
@@ -452,47 +542,147 @@ footer .email {
   display: none;
 }
 
-body{
 /* tablet */
 @media (max-width: 992px) {
   .container {
-    max-width: 720px;
-  }  
-  
-   /* computer */
-    max-width: 1320px;
-    margin: 0 auto;
-    padding:0 12px;
-
-    
-    /* phone */
-    @media (max-width:576px) {
-        max-width: 372px;
-        /* 348+24gutter */
-    }
+    width: 696px;
   }
 
+   .t-list {
+    width: 100%;
+  }
 
+  .banner1 {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true);
+  }
+
+  .banner2 {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true);
+  }
+
+  .pic {
+    width: 48%;
+  }
+
+  .pic img {
+    width: 336px;
+  }
+
+    
+  .s-icon li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .s-icon li {
+    margin-right: 16px;
+  }
+
+  .s-icon li:last-child {
+    margin-right: 0px;
+  }
+
+  .p-footer {
+    display: none;
+  }
 }
 
- 
+/* phone */
+@media (max-width: 767px) {
+  nav {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 
+  .container {
+    width: 100%;
+  }
 
-.container{
-    /* computer */
-    max-width: 1320px;
-    margin: 0 auto;
-    padding:0 12px;
+  
+  
+  
+  .logo {
+    padding: 16px 0;
+    margin: 0 15px;
+  }
 
-    /* tablet */
-    @media(max-width: 992px){
-        max-width: 720px;
-        /* 696+24gutter */
-    }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    /* phone */
-    @media (max-width:576px) {
-        max-width: 372px;
-        /* 348+24gutter */
-    }
+  .nav-item {
+    border: solid white 1px;
+    text-align: center;
+    margin-right: 0px;
+    padding: 12px;
+    width: 50%;    
+  }
+
+  
+  .t-list {
+    width: 100%;
+  }
+
+  .t-item a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pic {
+    width: 90%;
+    margin: 0 auto 24px auto;
+  }
+
+  .pic img {
+    width: 100%;
+  }
+  
+  
+
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .s-icon {
+    margin-left: auto;
+  }
+
+  .s-icon li img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .s-icon li {
+    margin-right: 8px;
+  }
+
+  .s-icon li:last-child {
+    margin-right: 0px;
+  }
+
+  footer .phone,
+  footer .email {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .material-symbols-outlined {
+    font-size: 18px;
+  }
+
+  footer .container {
+    display: none;
+  }
+
+  .p-footer {
+    display: block;
+  }
 }
