@@ -134,102 +134,28 @@ a {
 
 /* -------- */
 
-
-.bc-AA0601 {
-  background-color: #AA0601;
-}
-
-.container {
-  width: 1296px;
-  margin: 0 auto;
-}
-
-.logo {
-  width: 80px;
-  height: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link {
-  margin-right: 64px;
-}
-
-.nav-link:last-child {
-  margin-right: 0px;
-}
-
-.nav-link a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-.nav-link a:hover {
-  color: white;
-  border-bottom: 5px solid white;
-}
-
-.nav-link a:active {
-  color: yellow;
-  border-bottom: 5px solid yellow;
+* {
+  box-sizing: border-box;
 }
 
 .white {
   color: white;
 }
 
-
-
-.main {
-  margin-top: 170px;
-  margin-left: 200px;
-  margin-right: 120px;
-}
-
-.main h2 {
-  font-size: 58px;
-  font-weight: bolder;
-  color: black;
-  border-left: 5px solid brown;
-  margin-bottom: 30px;
-}
-
-.main h3 {
-  font-size: 24px;
-  font-weight: bolder;
-  color: black;
-  margin-bottom: 30px;
-}
-
-.main span {
-  font-size: 20px;
-  font-weight: bolder;
-  color: black;
-}
-
-.main p {
-  font-size: 15px;
-  color: black;
-  padding-top: 15px;
-  margin-bottom: 35px;
-  width: 100%;
+.red {
+  color: #aa0601;
 }
 
 
+
+.background {
+  background-color: #aa0601;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
 
 .p-top-60 {
   padding-top: 60px;
@@ -239,17 +165,19 @@ nav {
   padding-bottom: 30px;
 }
 
-.p-bottom-60{
-  padding-bottom: 60px;
+.p-bottom-70{
+  padding-bottom: 70px;
  }
+
+.padding-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 
 
 .m-right-8 {
   margin-right: 8px;
-}
-
-.m-right-50 {
-  margin-right: 50px;
 }
 
 .m-right-20 {
@@ -257,12 +185,18 @@ nav {
 }
 
 
+
+.m-right-50 {
+  margin-right: 50px;
+}
+
+
 .m-top-8 {
   margin-top: 8px;
 }
 
-.m-top-15 {
-  padding-top: 15px;
+.m-top-16 {
+  margin-top: 16px;
 }
 
 .m-top-30 {
@@ -271,14 +205,12 @@ nav {
 
 
 
-.padding-24 {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-
 .flex {
   display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .space-between {
@@ -289,6 +221,11 @@ nav {
   justify-content: center;
 }
 
+.flex-start {
+  justify-content: flex-start;
+  }
+
+
 .align-center {
   align-items: center;
 }
@@ -296,6 +233,101 @@ nav {
 .text-center {
   text-align: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  width: 80px;
+  height: 100%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 64px;
+}
+
+.nav-item:last-child {
+  margin-right: 0px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.nav-item a:hover {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+
+
+
+.white {
+  color: white;
+}
+
+
+
+.main {
+  margin-top: 120px;
+  margin-left: 300px;
+  margin-right: 20px;
+}
+
+.main h2 {
+  font-size: 58px;
+  font-weight: bolder;
+  color: black;
+  border-left: 8px solid brown;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  line-height: 70px;
+}
+
+.main h3 {
+  font-size: 28px;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.main span {
+  font-size: 23px;
+  font-weight: bolder;
+  color: black;
+}
+
+.main p {
+  font-size: 19px;
+  color: black;
+  padding-top: 15px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer-nav a {
@@ -353,29 +385,184 @@ footer .email {
   display: none;
 }
 
-body{
 /* tablet */
 @media (max-width: 992px) {
   .container {
-    max-width: 720px;
-  }  
-  
-   /* computer */
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 0 0 12px;
-
-    
-    /* phone */
-    @media (max-width:576px) {
-        max-width: 372px;
-    
-    }
+    width: 696px;
   }
 
+  
+  .main {
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+  
+.main h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: black;
+  border-left: 8px solid brown;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  line-height: 45px;
 }
 
+.main h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 30px;
+}
 
+.main span {
+  font-size: 21px;
+  font-weight: bolder;
+  color: black;
+}
 
+.main p {
+  font-size: 17px;
+  color: black;
+  padding-top: 15px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+  
+  
+  .s-icon li img {
+    width: 40px;
+    height: 40px;
+  }
 
+  .s-icon li {
+    margin-right: 16px;
+  }
 
+  .s-icon li:last-child {
+    margin-right: 0px;
+  }
+
+  .p-footer {
+    display: none;
+  }
+}
+
+/* phone */
+@media (max-width: 767px) {
+  nav {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  
+  
+  .main {
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+  
+  .main h2 {
+  font-size: 33px;
+  font-weight: bolder;
+  color: black;
+  border-left: 8px solid brown;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  line-height: 45px;
+}
+
+.main h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.main span {
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+}
+
+.main p {
+  font-size: 20px;
+  color: black;
+  padding-top: 15px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+  
+  
+  
+  .logo {
+    padding: 16px 0;
+    margin: 0 15px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .nav-item {
+    border: solid white 1px;
+    margin-right: 0px;
+    width: 50%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  
+
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .s-icon {
+    margin-left: auto;
+  }
+
+  .s-icon li img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .s-icon li {
+    margin-right: 8px;
+  }
+
+  .s-icon li:last-child {
+    margin-right: 0px;
+  }
+
+  footer .phone,
+  footer .email {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .material-symbols-outlined {
+    font-size: 18px;
+  }
+
+  footer .container {
+    display: none;
+  }
+
+  .p-footer {
+    display: block;
+  }
+}
